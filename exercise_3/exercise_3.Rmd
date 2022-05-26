@@ -265,14 +265,14 @@ So we decided to use random forest as our best predictive model.
 
 #### Plots
 This is the variable importance plot for our random forest model. As you can see, size, market rent, and age seem to be the biggest factors in predicting. Our green rating variable is actually show to have the lowest importance out of all of the parameters. 
-```{r Q3 - VI plot}
+```{r Q3 - VI plot, echo=FALSE}
 # variable importance measures
 vi = varImpPlot(green.forest, type=1)
 
 ```
 
 As you can see, it appears that green rating is only estimated to increase revenue by fifty dollars.
-```{r partail plot, include=FALSE}
+```{r partail plot, echo=FALSE}
 # partial dependence plots
 # these are trying to isolate the partial effect of specific features
 # on the outcome
@@ -431,18 +431,18 @@ To produce the three plots, first we set up the base plot of California using th
 
 The plot displays the median house value in California with the colors becoming brighter as the house value increases. The plot clearly displays the higher home values of the Los Angeles and San Francisco Bay Area (including coastal suburbs), having the most concentrated collection of homes with high values. 
 
-```{r Q4 - plot 1, include=FALSE}
+```{r Q4 - plot 1, echo=FALSE}
 ca_plot1
 ```
 This plot displays the predicted median house value from our model. As you can see, compared to the actual data, our model appears to do a good job at predicting house value. 
 
-```{r Q4 - plot 2, include=FALSE}
+```{r Q4 - plot 2, echo=FALSE}
 
 ca_plot2
 
 ```
 This plot shows the absolute value of the residuals between actual and predicted values. It appears that most of the errors from our model are small. 
-```{r Q4 - plot 3, include=FALSE}
+```{r Q4 - plot 3, echo=FALSE}
 
 ca_plot3
 

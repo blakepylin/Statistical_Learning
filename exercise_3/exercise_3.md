@@ -50,7 +50,7 @@
 The model above shows the un-pruned CART Tree, we will proceed to prune
 and then calculate RMSE.
 
-    ## 26.68204  RMSE for Pruned CART Model
+    ## 21.59013  RMSE for Pruned CART Model
 
 ### Part 2: Random Forest
 
@@ -59,19 +59,19 @@ and then calculate RMSE.
 This plot shows the out of bag MSE as a function of the number of trees
 used. Let’s proceed to look at the RMSE compared to the testing set.
 
-    ## 26.05519  RMSE for Random Forest
+    ## 19.22685  RMSE for Random Forest
 
 ### Part 3: Gradient Boosted Trees
 
 ![](exercise_3_files/figure-markdown_strict/2%20boosted%20-1.png)
 
-    ## [1] 77
+    ## [1] 44
 
 This plot shows the error curve of the Gradient Boosted Model, with the
 optimal number of trees listed as output. Let’s now check the RMSE for
 the Gradient Boosted Trees Model.
 
-    ## 25.7541  RMSE for Gradient Boosted Trees
+    ## 19.45091  RMSE for Gradient Boosted Trees
 
 Looking at the RMSE results from the three models, it appears that
 random forest would be the best choice for this particular set of data.
@@ -149,14 +149,11 @@ This is the variable importance plot for our random forest model. As you
 can see, size, market rent, and age seem to be the biggest factors in
 predicting. Our green rating variable is actually show to have the
 lowest importance out of all of the parameters.
-
-    # variable importance measures
-    vi = varImpPlot(green.forest, type=1)
-
 ![](exercise_3_files/figure-markdown_strict/Q3%20-%20VI%20plot-1.png)
 
 As you can see, it appears that green rating is only estimated to
 increase revenue by fifty dollars.
+![](exercise_3_files/figure-markdown_strict/partail%20plot-1.png)
 
 ### Wrap up
 
@@ -189,10 +186,13 @@ displays the higher home values of the Los Angeles and San Francisco Bay
 Area (including coastal suburbs), having the most concentrated
 collection of homes with high values.
 
+![](exercise_3_files/figure-markdown_strict/Q4%20-%20plot%201-1.png)
 This plot displays the predicted median house value from our model. As
 you can see, compared to the actual data, our model appears to do a good
 job at predicting house value.
 
+![](exercise_3_files/figure-markdown_strict/Q4%20-%20plot%202-1.png)
 This plot shows the absolute value of the residuals between actual and
 predicted values. It appears that most of the errors from our model are
 small.
+![](exercise_3_files/figure-markdown_strict/Q4%20-%20plot%203-1.png)
