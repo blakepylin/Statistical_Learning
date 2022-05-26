@@ -17,10 +17,10 @@ library(parallel)
 library(foreach)
 
 
-ABIA <- read.csv("../data/ABIA.csv")
-billboard <- read.csv("~/Documents/GitHub/ECO395M/data/billboard.csv")
-olympics_top20 <- read.csv("~/Documents/GitHub/ECO395M/data/olympics_top20.csv")
-sclass <- read.csv("~/Documents/GitHub/ECO395M/data/sclass.csv")
+ABIA <- read.csv('../exercise_1/data/ABIA.csv')
+billboard <- read.csv('../exercise_1/data/billboard.csv')
+olympics_top20 <- read.csv('../exercise_1/data/olympics_top20.csv')
+sclass <- read.csv('../exercise_1/data/sclass.csv')
 ```
 
 ## Problem 1: Data visualization: flights at ABIA
