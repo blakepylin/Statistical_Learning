@@ -51,12 +51,64 @@ construction.
 
 ![](Blake_Jayme_Ex2_files/figure-markdown_strict/Q3-1.png)
 
-    ##         (Intercept)            duration              amount         installment 
-    ##               -0.42                0.02                0.00                0.25 
-    ##                 age         historypoor     historyterrible          purposeedu 
-    ##               -0.03               -1.02               -1.72                0.52 
-    ## purposegoods/repair       purposenewcar      purposeusedcar       foreigngerman 
-    ##               -0.01                0.58               -1.02               -1.06
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: right;">-0.42</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">duration</td>
+<td style="text-align: right;">0.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amount</td>
+<td style="text-align: right;">0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">installment</td>
+<td style="text-align: right;">0.25</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">age</td>
+<td style="text-align: right;">-0.03</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">historypoor</td>
+<td style="text-align: right;">-1.02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">historyterrible</td>
+<td style="text-align: right;">-1.72</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">purposeedu</td>
+<td style="text-align: right;">0.52</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">purposegoods/repair</td>
+<td style="text-align: right;">-0.01</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">purposenewcar</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">purposeusedcar</td>
+<td style="text-align: right;">-1.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">foreigngerman</td>
+<td style="text-align: right;">-1.06</td>
+</tr>
+</tbody>
+</table>
 
 The coefficients of poor and terrible history are the opposite of what
 people would expect, this negative number means people with worse credit

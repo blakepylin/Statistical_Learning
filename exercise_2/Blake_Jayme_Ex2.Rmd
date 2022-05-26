@@ -24,6 +24,8 @@ german_credit <- read.csv('../exercise_2/data/german_credit.csv')
 hotels_dev<- read.csv('../exercise_2/data/hotels_dev.csv')
 hotels_val<- read.csv('../exercise_2/data/hotels_val.csv')
 data(SaratogaHouses)
+
+theme_set(theme_minimal())
 ```
 
 ## Problem 1: Data visualization: Capital Metro
@@ -224,7 +226,7 @@ credit_test  = testing(credit_split)
 # building the model 
 logit_default = glm(Default~duration + amount + installment + age + history + purpose + foreign, data = credit_train, family = binomial)
 
-coef(logit_default) %>% round(2)
+knitr::kable(coef(logit_default) %>% round(2))
 
 ```
 The coefficients of poor and terrible history are the opposite of what people would expect, this negative number means people with worse credit history are less likely to default.  
