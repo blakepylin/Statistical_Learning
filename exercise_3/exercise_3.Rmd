@@ -24,8 +24,8 @@ library(maps)
 library(mapdata)
 
 greenbuildings = read.csv('../data/greenbuildings.csv', header=TRUE)
-CAhousing = read.csv("~/data/CAhousing.csv", header=TRUE)
-dengue = read.csv("~/data/dengue.csv", header=TRUE)
+CAhousing = read.csv('../data/CAhousing.csv', header=TRUE)
+dengue = read.csv('../data/dengue.csv', header=TRUE)
 
 # override the default setting of ggplot
 theme_set(theme_minimal())
